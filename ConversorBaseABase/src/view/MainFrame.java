@@ -36,7 +36,7 @@ public class MainFrame extends JFrame {
 			setDefaultLookAndFeelDecorated(true);
 			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 			setTitle(TITTLE);
-			setSize(new Dimension(400, 300));
+			setSize(new Dimension(400, 200));
 			setResizable(false);
 			setLayout(new BorderLayout());
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
