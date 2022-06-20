@@ -22,8 +22,8 @@ import controllers.presenter;
 public class MainFrame extends JFrame {
 	private static final String CONVERT = "Convert";
 	/**
-	 * @author DSotoFuya 
-	 * Clase encargada de mantener la vista de la aplicación
+	 * @author DSotoFuya
+	 *         Clase encargada de mantener la vista de la aplicaciï¿½n
 	 */
 	private static final String TITTLE = "Conversor de numeros NBase a MBase - Proyecto Arquitectura";
 	private static final long serialVersionUID = -7824404318669296697L;
@@ -72,7 +72,7 @@ public class MainFrame extends JFrame {
 		baseMCB.setPreferredSize(new Dimension(120, 30));
 		baseNCB = new JComboBox<String>();
 		baseNCB.setPreferredSize(new Dimension(120, 30));
-		for (int i = 0; i < 36; i++) {
+		for (int i = 1; i < 37; i++) {
 			baseMCB.addItem(String.valueOf(i));
 			baseNCB.addItem(String.valueOf(i));
 		}
