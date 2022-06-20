@@ -36,7 +36,7 @@ public class MainFrame extends JFrame {
 			setDefaultLookAndFeelDecorated(true);
 			UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 			setTitle(TITTLE);
-			setSize(new Dimension(250, 300));
+			setSize(new Dimension(400, 300));
 			setResizable(false);
 			setLayout(new BorderLayout());
 			setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -63,10 +63,6 @@ public class MainFrame extends JFrame {
 
 	public JPanel initPanel(ActionListener presenter) {
 		JPanel dataPanel = new JPanel();
-		dataPanel.add(new JLabel("N\u00FAmero: "));
-		numberTF = new JTextField();
-		numberTF.setPreferredSize(new Dimension(120, 30));
-		dataPanel.add(numberTF);
 		dataPanel.add(new JLabel("Base inicial: "));
 		baseMCB = new JComboBox<String>();
 		baseMCB.setPreferredSize(new Dimension(120, 30));
@@ -79,6 +75,10 @@ public class MainFrame extends JFrame {
 		dataPanel.add(baseMCB);
 		dataPanel.add(new JLabel("Base  final: "));
 		dataPanel.add(baseNCB);
+		dataPanel.add(new JLabel("N\u00FAmero: "));
+		numberTF = new JTextField();
+		numberTF.setPreferredSize(new Dimension(120, 30));
+		dataPanel.add(numberTF);
 		dataPanel.add(new JLabel("Presici\u00F3n: "));
 		truncTF = new JTextField("0");
 		truncTF.setPreferredSize(new Dimension(120, 30));
@@ -87,7 +87,7 @@ public class MainFrame extends JFrame {
 		resultLbl = new JLabel();
 		resultLbl.setFont(new Font("Arial", 0, 20));
 		resultLbl.setForeground(Color.GREEN);
-		resultLbl.setPreferredSize(new Dimension(120, 30));
+		resultLbl.setPreferredSize(new Dimension(350, 30));
 		resultLbl.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		dataPanel.add(resultLbl);
 		return dataPanel;
