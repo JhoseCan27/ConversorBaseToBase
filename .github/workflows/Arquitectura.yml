@@ -7,5 +7,5 @@ my_first_job:
 runs-on: ubuntu-latest
 steps:
 - run: |
-echo Agregando mi primer job,
-echo despues se pueden agregar otros.
+  echo Agregando mi primer job,
+  echo despues se pueden agregar otros.
